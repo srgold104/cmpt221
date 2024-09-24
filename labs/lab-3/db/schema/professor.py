@@ -9,7 +9,7 @@ class Professor(db.Model):
     Email = db. Column (db. String (40))
 
     # create relationship with courses table. assoc table name = ProfessorCourse
-    course = db.relationship('Courses', secondary = 'ProfessorCourse', back_populates = 'Professors')
+    Course = db.relationship('Courses', secondary = 'ProfessorCourse', back_populates = 'Professors')
     def __init__(self):
         self.FirstName = self.FirstName
         self.LastName = self.LastName
