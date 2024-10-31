@@ -5,6 +5,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/static/style.css">
     <title>Bookmark</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -20,18 +21,38 @@
 
 	<!--Use the header area for the website name or logo-->
 	<header>
-		<h1 class="title-text"><a href="home.html">Bookmark</h1>
-		<nav>
-			<ul>
-				<a href="home.html">Home</a>&nbsp; &#9475; &nbsp;
-				<a href="feed.html">Feed</a>&nbsp; &#9475; &nbsp;
-			</ul>
-		</nav>
+	    <h1 class="title-text"><a href="home.html">Bookmark</h1>
 	</header>
+
+    <nav id="contentLink" class="box">
+            <a href="books.html">Books</a>&nbsp; &#9475; &nbsp;
+            <a href="authors.html">Authors</a>&nbsp; &#9475; &nbsp;
+            </nav>
+
 	<!--Use the main area to add the main content of the webpage-->
 	<main>
-		<p></p>
-		<p></p>
+		<nav class="box">
+            <ul>
+				<a href="home.html">Home</a><br>
+                <br>
+				<a href="feed.html">Feed</a><br>
+                <br>
+                <a href="signup.html">Sign Up</a><br>
+                <br>
+                <a href="login.html">Log In</a><br>
+                <br>
+                <a href="contactus.html">Contact Us</a><br>
+                <br>
+			</ul>
+		</nav>
+
+    
+        <p id="feed">
+            
+            Area for most recent posts</p>
+		<p>
+            <img src="/static/images/bookpics/bookcover_1.jpg" style="width:120px;height:150px;">
+        </p>
 		<p></p>
 	</main>
 
