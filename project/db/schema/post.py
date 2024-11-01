@@ -1,6 +1,6 @@
 from db.server import db
 
-class Posts(db.Model):
+class Post(db.Model):
     __tablename__ = 'Posts'
     TableID = db.Column(db.Integer,primary_key=True, autoincrement=True)
     #column 1 will be user ID
@@ -12,7 +12,7 @@ class Posts(db.Model):
     #column 4 will be the actual post - no limit on charactes
     Post = db.Column(db.String)
 
-    Posts = db.relationship('Users', secondary = 'UserPost', back_populates = "Users")
+    # Posts = db.relationship('Users', secondary = 'UserPost', back_populates = "Users")
     def __init__(self):
 
         self.BookName = self.BookName
