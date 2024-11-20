@@ -52,28 +52,38 @@ with app.app_context():
     # LAB 4 --------------------------------------------------
 
     # # write a query to insert 3 records into the Courses table
-    # query_1 = """ """
-    # db.session.execute(text(query_1))
-    # db.session.commit()
+    query_1 = """INSERT INTO public."Courses" ("CourseID", "CourseName", "Semester", "Year")
+              VALUES (221, 'Software Dev 2', 'Fall', 2024);
+              INSERT INTO public."Courses" ("CourseID", "CourseName", "Semester", "Year")
+              VALUES (101, 'English', 'Fall', 2024);
+              INSERT INTO public."Courses" ("CourseID", "CourseName", "Semester", "Year")
+              VALUES (401, 'Physics', 'Spring', 2025);
+              """
+    db.session.execute(text(query_1))
+    db.session.commit()
 
     # # write a query to select all records from the Courses table
-    # query_2 = """ """
-    # courses = db.session.execute(text(query_2))
-    # print(f"\n\n----------- Courses Table")
-    # for course in courses:
-    #     print(course)
+    query_2 = """SELECT "CourseID", "CourseName", "Semester", "Year"
+	            FROM public."Courses"; """
+    courses = db.session.execute(text(query_2))
+    print(f"\n\n----------- Courses Table")
+    for course in courses:
+         print(course)
 
     # # write a query to update 1 record in the Courses table
-    # query_3 = """ """
-    # db.session.execute(text(query_3))
-    # db.session.commit()
+    query_3 = """UPDATE public."Courses"
+	            SET "Semester"= 'Spring'
+	            WHERE "CourseName" = 'English'; """
+    db.session.execute(text(query_3))
+    db.session.commit()
 
     # # write a query to delete 1 record in the Courses table
-    # query_4 = """ """
-    # db.session.execute(text(query_4))
-    # db.session.commit()
+    query_4 = """DELETE FROM public."Courses"
+	            WHERE "CourseID" = 221; """
+    db.session.execute(text(query_4))
+    db.session.commit()
 
-    # print(f"\n\n----------- Courses Table")
-    # courses = db.session.execute(text(query_2))
-    # for course in courses:
-    #     print(course)
+    print(f"\n\n----------- Courses Table")
+    courses = db.session.execute(text(query_2))
+    for course in courses:
+         print(course)
