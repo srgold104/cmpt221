@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Let's get you logged in!</h1>
+        <h2>For security purposes, you will have a limited 
+            amount of time to complete your login before the page will reset.</h2>
+
+            <p> This page will refresh in <span id="countdowntimer">20 </span> Seconds</p>
+
+            <script type="text/javascript">
+                var timeleft = 20;
+                var downloadTimer = setInterval(function(){
+                timeleft--;
+                document.getElementById("countdowntimer").textContent = timeleft;
+                if(timeleft <= 0)
+                    clearInterval(downloadTimer);
+                },1000);
+            </script>
+
+
+<meta http-equiv="refresh" content="5;url=http://127.0.0.1:5000/failedlogin" />
+
+
+        <p><form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe">
+          </form></p>
+
+        <p><a style="color:blue" href="http://127.0.0.1:5000">Home</a></p>
+
+    </body>
+</html>
