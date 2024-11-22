@@ -2,44 +2,44 @@
 
 Resources
 =========
-This section describes class and functions private to <application-name>. It is intended to document how the application works
+This section describes class and functions private to CMPT221. It is intended to document how the application works
 
 labs.lab-1
 ----------
-<Short description of Lab 1>
+Creating a Pull Request
 
 labs.lab-2
 ----------
-<Short description of Lab 2>
+Pip & Virtual Environments
 
 labs.lab-3
 ----------
-<Short description of Lab 3>
+Creating & Connecting to a Postgres DB
 
 labs.lab-4
 ----------
-<Short description of Lab 4>
+Writing SQL Queries
 
 labs.lab-5
 ----------
-<Short description of Lab 5>
+Build an Intentionally Bad GUI
 
 labs.lab-6
 ----------
-<Short description of Lab 6>
+Create a login form that requires a user's email and password
 
 labs.lab-7
 ----------
-<Short description of Lab 7>
+Input validation, sanitization, error handling, & logging
 
 labs.lab-8
 ----------
-<Short description of Lab 8>
+Javascript
 
 labs.lab-9
 ----------
-<Short description of Lab 9>
+Unit Tests
 
 labs.lab-10
 -----------
-<Short description of Lab 10>
+Documentation
