@@ -2,7 +2,7 @@
 
 Introduction
 ============
-This is the documentation for the CMPT221 Lab section.
+This is the documentation for the CMPT221 Lab section. It describes all the labs for the semester.
 
 Documentation
 -------------

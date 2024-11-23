@@ -4,6 +4,8 @@ Development
 ===========
 This section is intended for developers that want to create a fix or develop an enhancement to the CMPT221 application.
 
+//
+
 Code of Conduct
 ---------------
 Coding conventions set by the maintainers are to be followed.

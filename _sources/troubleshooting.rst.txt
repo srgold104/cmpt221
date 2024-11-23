@@ -19,6 +19,6 @@ The best solution for this problem is to read and execute the lab instructions c
 
 Issue #3
 --------
-A common issue encountered in lab is difficulty pulling from and pushing to Git Hub.
+A very common issue encountered in lab is difficulty pulling from and pushing to Git Hub.
 
 The best solution for this problem is to read and execute the lab instructions carefully and in order. And using Google...a lot.

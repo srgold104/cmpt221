@@ -22,7 +22,7 @@ Writing SQL Queries
 
 labs.lab-5
 ----------
-Build an Intentionally Bad GUI
+Build an Intentionally Bad GUI!
 
 labs.lab-6
 ----------
